@@ -39,3 +39,8 @@ next-env.d.ts
 .idea
 .vscode
 yarn.lock
+
+*storybook.log
+storybook-static
+
+.history
