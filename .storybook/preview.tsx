@@ -1,5 +1,7 @@
 import type { Preview } from '@storybook/react';
+import React from 'react';
 import '../src/app/globals.css';
+import { CartProvider } from '../src/contexts/CartContext';
 
 const preview: Preview = {
   parameters: {
@@ -23,6 +25,13 @@ const preview: Preview = {
       ],
     },
   },
+  decorators: [
+    Story => (
+      <CartProvider>
+        <Story />
+      </CartProvider>
+    ),
+  ],
 };
 
 export default preview;

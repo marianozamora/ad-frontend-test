@@ -1,4 +1,4 @@
-export interface Game {
+export type Game = {
   id: string;
   genre: string;
   image: string;
@@ -6,9 +6,8 @@ export interface Game {
   description: string;
   price: number;
   isNew: boolean;
-}
+};
 
-// Mock games data
 export const allGames: Game[] = [
   {
     id: '1',
